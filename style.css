@@ -193,13 +193,20 @@ header {
 }
 
 /* TABELA DE PREÇOS INTERATIVA */
-.pricing-grid {
+/*.pricing-grid {
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 50px 5%;
 }
-
+*/
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px 5%;
+    justify-items: center;
+}
 .price-card {
     background: rgba(255,255,255,0.03);
     border: 1px solid rgba(255,255,255,0.1);
@@ -256,6 +263,144 @@ header {
     font-size: 3rem;
     color: var(--primary);
     line-height: 0;
+}
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 768px) {
+    /* Ajustes gerais */
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    /* Header e navegação */
+    header {
+        width: 95%;
+        top: 10px;
+    }
+
+    .nav-container {
+        padding: 10px 20px;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+        color: var(--primary);
+        cursor: pointer;
+        order: 2;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(10, 11, 13, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+        gap: 15px;
+        text-align: center;
+        order: 3;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
+
+    .btn-modern {
+        order: 1;
+        margin-left: auto;
+        padding: 8px 15px;
+        font-size: 0.7rem;
+    }
+
+    /* Hero */
+    .hero {
+        background-attachment: scroll; /* Remove parallax em mobile */
+    }
+
+    /* Grid de serviços */
+    .grid-services {
+        padding: 50px 5%;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 30px;
+    }
+
+    /* Pricing */
+    .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .price-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .price-card.featured {
+        transform: scale(1);
+    }
+
+    /* Depoimentos */
+    .testimonials-section {
+        background-attachment: scroll;
+        padding: 60px 5%;
+    }
+
+    .testimonial-item {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .nav-container {
+        padding: 10px 15px;
+    }
+
+    .btn-modern span {
+        display: none; /* Esconde o texto do botão, mantendo apenas o ponto */
+    }
+
+    .btn-modern {
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    .btn-dot {
+        width: 12px;
+        height: 12px;
+        margin: 0;
+    }
+
+    .price-card {
+        padding: 30px 20px;
+    }
+
+    .price {
+        font-size: 2rem;
+    }
 }
 
 .card:hover .card-bg { opacity: 0.3; transform: scale(1.1); }sty
