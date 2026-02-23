@@ -15,20 +15,22 @@
     <header>
         <nav class="nav-container">
             <div class="logo">S.E.N.T.I.N.E.L</div>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
             <label for="menu-toggle" class="menu-icon">☰</label>
+            
             <ul class="nav-links">
                 <li><a href="#home"><span class="nav-number">01</span> Início</a></li>
                 <li><a href="#servicos"><span class="nav-number">02</span> Serviços</a></li>
                 <li><a href="#precos"><span class="nav-number">03</span> Planos</a></li>
                 <li><a href="#depoimentos"><span class="nav-number">04</span> Casos</a></li>
             </ul>
+
             <a href="#contato" class="btn-modern">
                 <span>CONTATO SEGURO</span>
                 <div class="btn-dot"></div>
             </a>
-    </nav>
-        
+        </nav>
     </header>
 
     <section id="home" class="hero" style="background-image: url('src:sua-imagem-background-hero.jpg');">
@@ -43,7 +45,7 @@
         <h2 class="section-title">Nossas Operações</h2>
         <div class="grid-services">
             <div class="card reveal">
-                <div class="card-bg" style="background-image:open_source_intelligence9.webp"></div>
+                <div class="card-bg" style="background-image: url('src:open_source_intelligence9.webp');"></div>
                 <h3>Investigação Privada</h3>
                 <p>Coleta de evidências e vigilância especializada com tecnologia de ponta.</p>
             </div>
@@ -53,72 +55,12 @@
                 <p>Análise profunda de conformidade e detecção de fraudes financeiras.</p>
             </div>
             <div class="card reveal">
-                <div class="card-bg" style="background-image:agents-of-a-private-detective-agency-are-working-on-a-missing-person-case.webp"></div>
+                <div class="card-bg" style="background-image: url('src:agents-of-a-private-detective-agency.webp');"></div>
                 <h3>Cyber Intelligence</h3>
                 <p>Proteção contra espionagem industrial e varredura de vulnerabilidades.</p>
             </div>
         </div>
     </section>
-
-    <section id="precos" class="pricing-section">
-    <h2 class="section-title">Níveis de Acesso</h2>
-    <div class="pricing-grid">
-        <div class="price-card reveal">
-            <div class="price-header">
-                <h3>Analítico</h3>
-                <p class="price">R$ 2.500<span>/caso</span></p>
-            </div>
-            <ul class="price-features">
-                <li><i class="icon-check"></i> Varredura Digital Básica</li>
-                <li><i class="icon-check"></i> Relatório de Antecedentes</li>
-                <li><i class="icon-check"></i> Suporte 12h/dia</li>
-            </ul>
-            <button class="btn-price">Solicitar Dossier</button>
-        </div>
-        
-            <div class="price-card featured reveal">
-                <div class="popular-badge">MAIS REQUISITADO</div>
-                <div class="price-header">
-                    <h3>Operacional</h3>
-                    <p class="price">R$ 7.900<span>/caso</span></p>
-                </div>
-                <ul class="price-features">
-                    <li><i class="icon-check"></i> Vigilância em Campo (48h)</li>
-                    <li><i class="icon-check"></i> Auditoria em Profundidade</li>
-                    <li><i class="icon-check"></i> Cyber Intelligence Avançada</li>
-                </ul>
-                <button class="btn-price">Iniciar Operação</button>
-            </div>
-        </div>
-    </section>
-    
-    <section id="depoimentos" class="testimonials-section" style="background-image: url('src:background-depoimentos.jpg');">
-        <div class="testimonial-container">
-            <h2 class="section-title">Relatórios de Confiança</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-item reveal">
-                    <div class="quote-icon">"</div>
-                    <p>"A precisão da auditoria financeira salvou nossa fusão corporativa. Total discrição."</p>
-                    <div class="client-info">
-                        <strong>CEO de Multinacional</strong>
-                        <span>Setor Energético</span>
-                    </div>
-                </div>
-                <div class="testimonial-item reveal">
-                    <div class="quote-icon">"</div>
-                    <p>"A Sentinel resolveu em 48h o que as autoridades não conseguiram em meses."</p>
-                    <div class="client-info">
-                        <strong>Diretor Jurídico</strong>
-                        <span>Logística Global</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 SENTINEL GROUP - Operações Sigilosas</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
